@@ -1,0 +1,25 @@
+- name: Update homebrew and upgrade all packages
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+- name: Install common packages
+  homebrew: name={{ item }}
+  with_items:
+    - tree
+    - git
+    - bash-git-prompt
+    - zsh
+    - zsh-git-prompt
+    - tmux
+    - vim
+- name: Add homebrew tap repositories
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - caskroom/cask
+    - homebrew/services
+- name: Install homebrew cask packages
+  homebrew_cask: name={{ item }}
+  with_items:
+    - coteditor
+    - atom
+    - iterm2

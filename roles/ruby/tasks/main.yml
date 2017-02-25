@@ -1,0 +1,8 @@
+- name: Install Ruby packages
+  homebrew: name={{ item }}
+  with_items:
+    - rbenv
+    - ruby-build
+    - openssl
+    - readline
+    
