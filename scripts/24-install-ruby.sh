@@ -8,3 +8,5 @@ CONFIGURE_OPTS="--with-readline-dir=/usr/local --with-openssl-dir=`brew --prefix
   rbenv install 2.3.3 --skip-existing
 rbenv global 2.3.3
 ruby -v
+
+gem install rubocop
