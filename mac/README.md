@@ -1,4 +1,14 @@
-# Install Ruby on Rails dev env for Mac
+# Install dev tools for Mac
+
+## NLP, AI tools
+
+    ansible-playbook playbook-nlp.yml
+
+Including:
+
+- google-cloud-sdk
+
+## Rails dev env
 
 ~~~
 sh scripts/10-install-brew.sh

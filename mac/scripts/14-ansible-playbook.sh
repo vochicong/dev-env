@@ -1,1 +1,1 @@
-ansible-playbook playbook.yml -i hosts.ini
+ansible-playbook playbook-rails.yml

@@ -1,0 +1,4 @@
+- name: Install google-cloud-sdk
+  homebrew_cask: name={{ item }}
+  with_items:
+    - google-cloud-sdk
