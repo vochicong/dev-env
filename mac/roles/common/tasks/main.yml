@@ -7,11 +7,14 @@
   with_items:
     - tree
     - git
-    - bash-git-prompt
     - zsh
-    - zsh-git-prompt
+    - zsh-completions
+    # install oh-my-zsh by:
+    # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     - tmux
     - vim
+  tags:
+    - common
 - name: Add homebrew tap repositories
   homebrew_tap: tap={{ item }} state=present
   with_items:
@@ -22,4 +25,8 @@
   with_items:
     - coteditor
     - atom
+    - visual-studio-code
     - iterm2
+    - slack
+  tags:
+    - common
