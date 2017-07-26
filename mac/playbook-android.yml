@@ -3,6 +3,4 @@
   connection: local
   roles:
     - common
-    - ruby
-    - database
-playbook-rails.yml
+    - android

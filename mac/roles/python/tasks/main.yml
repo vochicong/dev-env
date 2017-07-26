@@ -1,0 +1,7 @@
+- name: Install Python
+  homebrew: name={{ item }}
+  with_items:
+    - python
+    - python3
+  tags:
+    - python
