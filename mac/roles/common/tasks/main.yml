@@ -1,7 +1,3 @@
-- name: Update homebrew and upgrade all packages
-  homebrew:
-    update_homebrew: yes
-    upgrade_all: yes
 - name: Install common packages
   homebrew: name={{ item }}
   with_items:
