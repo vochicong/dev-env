@@ -1,0 +1,7 @@
+- name: Install Java and Android Studio
+  homebrew_cask: name={{ item }}
+  with_items:
+    - mactex
+    - lyx
+  tags:
+    - tex
