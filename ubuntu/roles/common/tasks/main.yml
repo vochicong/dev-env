@@ -1,0 +1,20 @@
+- name: Install common packages
+  become: true
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - tree
+    - git
+    - vim      
+    - zsh
+    - python-pip
+  tags:
+    - common
+- pip:
+    name: "{{ item }}"
+  with_items:
+    - ansible
+    - docker-compose
+  become: true
+  

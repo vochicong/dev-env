@@ -1,2 +1,3 @@
 sudo apt update
-sudo apt install -y vim
+sudo pip install ansible
+ansible-playbook playbook.yml -i hosts.ini
