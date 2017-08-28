@@ -10,6 +10,7 @@
     - tmux
     - vim
     - graphviz
+    - wget
   tags:
     - common
 - name: Add homebrew tap repositories
