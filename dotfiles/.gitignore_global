@@ -1,0 +1,20 @@
+# git config --global core.excludesfile ~/.gitignore_global
+
+*~
+*.log*
+.DS_Store*
+._*
+.Trashes
+*.pyc
+.cache
+tmp*
+.ipynb_checkpoints
+*.swp
+
+*.iml
+.idea
+.vscode
+
+.env*
+!*sample*
+.byebug_history
