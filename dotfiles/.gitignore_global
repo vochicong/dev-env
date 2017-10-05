@@ -11,10 +11,14 @@ tmp*
 .ipynb_checkpoints
 *.swp
 
+# Tools, IDE related files
 *.iml
 .idea
 .vscode
+tags
+.byebug_history
 
+# Environment
 .env*
 !*sample*
-.byebug_history
+
