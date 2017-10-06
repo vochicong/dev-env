@@ -17,6 +17,7 @@ tmp*
 .vscode
 tags
 .byebug_history
+*.retry
 
 # Environment
 .env*

@@ -5,11 +5,9 @@
     - git
     - zsh
     - zsh-completions
-    # install oh-my-zsh by:
-    # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     - tmux
     - vim
-    - graphviz
+    # - graphviz
     - wget
   tags:
     - common
@@ -21,10 +19,13 @@
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }}
   with_items:
-    - coteditor
+    # - coteditor
     - atom
     - visual-studio-code
     - iterm2
     - slack
+    - google-chrome
+    - jetbrains-toolbox
+    - 1password
   tags:
     - common
