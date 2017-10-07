@@ -2,20 +2,15 @@
 
 ## Get started
 
-Install git, brew, ansible.
-Checkout this repository.
-
-    xcode-select --install
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew install ansible
-
     git clone https://github.com/vochicong/dev-env.git
-    cd dev-env/mac
+    cd dev-env/mac/scripts/
+    ./10-install-brew.sh && ./12-install-ansible.sh
+    cd ..
 
 ## Docker dev env
 
     ansible-playbook playbook-docker.yml
-    scripts/13-install-oh-my-zsh
+    ./scripts/13-install-oh-my-zsh
 
 ## NLP, AI tools
 
