@@ -1,8 +1,9 @@
 
 if [ -d "/usr/local/workspace/.rbenv/bin" ]; then
   export PATH="/usr/local/workspace/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
 fi
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 if [ -d "/home/chronos/user/.pyenv/bin" ]; then
   export PATH="/home/chronos/user/.pyenv/bin:$PATH"
