@@ -1,9 +1,4 @@
-# - name: Install docker
-#   homebrew: name={{ item }}
-#   with_items:
-#     - docker
-#   tags:
-#     - docker
+# Install /Applications/Docker.app and /usr/local/bin/docker
 - name: Install docker app
   homebrew_cask: name={{ item }}
   with_items:
