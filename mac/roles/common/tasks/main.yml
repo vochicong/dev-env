@@ -1,26 +1,33 @@
 - name: Install common packages
   homebrew: name={{ item }}
   with_items:
-    - tree
     - git
+    - git-flow
     - zsh
     - zsh-completions
-    - tmux
     - vim
-    # - graphviz
-    - wget
   tags:
     - common
+
+- name: remove some packages
+  homebrew: name={{ item }}
+  with_items:
+    - tree
+    - tmux
+    - graphviz
+    - wget
+  tags:
+    - remove
+
 - name: Add homebrew tap repositories
   homebrew_tap: tap={{ item }} state=present
   with_items:
     - caskroom/cask
     - homebrew/services
+
 - name: Install homebrew cask packages
-  homebrew_cask: name={{ item }}
+  homebrew_cask: name={{ item }} state=present
   with_items:
-    # - coteditor
-    - atom
     - visual-studio-code
     - iterm2
     - slack
@@ -29,6 +36,15 @@
     - 1password
     - evernote
     - sourcetree
-    - sequel-pro
+    - onyx
   tags:
     - common
+
+- name: remove brew cask pkgs
+  homebrew_cask: name={{ item }} state=absent
+  with_items:
+    - coteditor
+    - atom
+    - sequel-pro
+  tags:
+    - remove
