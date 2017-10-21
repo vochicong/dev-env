@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -ex
+set -x
 
 brew install rbenv ruby-build rbenv-gemset
 
