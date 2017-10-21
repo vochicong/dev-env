@@ -3,7 +3,7 @@ set -ex
 
 brew install rbenv ruby-build rbenv-gemset
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
 
 # Install Ruby
 rbenv install 2.4.2
