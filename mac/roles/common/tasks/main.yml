@@ -2,21 +2,22 @@
   homebrew: name={{ item }}
   with_items:
     - git
-    - git-flow
     - zsh
     - zsh-completions
-    - vim
   tags:
-    - common
+    - brew
 
 - name: remove some packages
   homebrew: name={{ item }}
   with_items:
+    - git-flow
+    - graphviz
     - tree
     - tmux
-    - graphviz
+    - vim
     - wget
   tags:
+    - brew
     - remove
 
 - name: Add homebrew tap repositories
@@ -28,20 +29,21 @@
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }} state=present
   with_items:
-    - visual-studio-code
-    - iterm2
-    - slack
+    - 1password
+    - dash
+    - evernote
+    - github
     - google-chrome
     - google-backup-and-sync
+    - iterm2
     - jetbrains-toolbox
-    - 1password
-    - evernote
-    - sourcetree
-    - github
     - onyx
-    - dash
+    - postman
+    - slack
+    - sourcetree
+    - visual-studio-code
   tags:
-    - common
+    - cask
 
 - name: remove brew cask pkgs
   homebrew_cask: name={{ item }} state=absent
@@ -51,3 +53,4 @@
     - sequel-pro
   tags:
     - remove
+    - cask
