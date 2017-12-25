@@ -3,14 +3,14 @@
 ## Get started
 
     git clone https://github.com/vochicong/dev-env.git
-    cd dev-env/mac/scripts/
-    ./10-install-brew.sh && ./12-install-ansible.sh
-    cd ..
+    cd dev-env/mac/
+    ./scripts/10-install-brew.sh
+    ./scripts/12-install-ansible.sh
+    ./scripts/13-install-oh-my-zsh
 
 ## Docker dev env
 
     ansible-playbook playbook-docker.yml
-    ./scripts/13-install-oh-my-zsh
 
 ## NLP, AI tools
 
@@ -22,7 +22,7 @@ Including:
 
 ## Rails dev env
 
-    sh scripts/24-install-ruby.sh
+    ./scripts/24-install-ruby.sh
 
 The scripts will install Ruby on Rails dev env for Mac, including
 - [Homebrew](https://brew.sh/)
