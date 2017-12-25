@@ -24,7 +24,8 @@ Including:
 
     ./scripts/24-install-ruby.sh
 
-The scripts will install Ruby on Rails dev env for Mac, including
+## References
+
 - [Homebrew](https://brew.sh/)
 - [Ansible](https://www.ansible.com/)
 - git, git-prompt
