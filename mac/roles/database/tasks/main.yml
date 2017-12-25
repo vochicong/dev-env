@@ -1,6 +1,0 @@
-- name: Install MySQL/PostgreSQL
-  homebrew: name={{ item }}
-  with_items:
-    - mysql
-    - postgresql
-    

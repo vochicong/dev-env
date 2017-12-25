@@ -5,15 +5,11 @@
     git clone https://github.com/vochicong/dev-env.git
     cd dev-env/mac/
     ./scripts/10-install-brew.sh
-    ./scripts/12-install-ansible.sh
-    ./scripts/13-install-oh-my-zsh
-
-## Docker dev env
-
-    ansible-playbook playbook-docker.yml
+    ./scripts/13-install-oh-my-zshß
 
 ## NLP, AI tools
 
+    ./scripts/12-install-ansible.sh
     ansible-playbook playbook-nlp.yml
 
 Including:
@@ -22,15 +18,14 @@ Including:
 
 ## Rails dev env
 
-    ./scripts/24-install-ruby.sh
+    ./rails/install.sh
+    
+## Utilities
+
+    brew bundle --file=utils/Brewfile
 
 ## References
 
 - [Homebrew](https://brew.sh/)
 - [Ansible](https://www.ansible.com/)
-- git, git-prompt
-- zsh, tmux, tree, iterm2
-- coteditor, atom, vim
-- MySQL, PostgreSQL
-- rbenv, ruby-build, openssl, readline
-- Ruby, gems: rubocop, bundler, rails
+

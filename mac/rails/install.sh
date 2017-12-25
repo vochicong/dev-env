@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 set -x
 
-brew install rbenv ruby-build rbenv-gemset
+cd `dirname $0`
+
+brew update
+brew bundle 
 
 eval "$(rbenv init -)"
 
@@ -10,4 +13,5 @@ rbenv install -s 2.4.2
 rbenv global 2.4.2
 ruby -v
 
-gem install bundler rubocop-git rspec coderay
+gem install bundler 
+bundle install
