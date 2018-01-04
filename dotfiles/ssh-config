@@ -2,6 +2,6 @@ Host github.com
   User git
   Port 22
   HostName github.com
-  IdentityFile ~/.ssh/vochicong
+  IdentityFile ~/.ssh/id_rsa
   TCPKeepAlive yes
   IdentitiesOnly yes
