@@ -18,7 +18,7 @@ Including:
 
 ## Rails dev env
 
-    ./rails/install.sh
+See https://github.com/vochicong/rails-dev-mac
     
 ## Utilities
 
