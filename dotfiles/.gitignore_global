@@ -6,7 +6,8 @@
 ._*
 .Trashes
 *.pyc
-.cache
+.cache*
+cache
 tmp*
 .ipynb_checkpoints
 *.swp
