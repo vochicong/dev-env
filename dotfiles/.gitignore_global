@@ -21,7 +21,7 @@ tags
 *.retry
 
 # Environment
-.env*
+.env*local
 !*sample*
 
 .elasticbeanstalk/*
