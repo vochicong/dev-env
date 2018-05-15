@@ -4,3 +4,8 @@
 [core]
 	excludesfile = /home/chronos/user/.gitignore_global
 	pager = more
+[alias]
+	b = for-each-ref --sort=committerdate refs/remotes/origin --format='%(HEAD) %(color:yellow)%(refname:lstrip=3)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+	today = log --since='yesterday'  # todays work
+	g = log --graph --date=relative --date-order --format=format:'%C(yellow)%h %C(bold green)[%ar] %C(reset)%s %C(red)%d %C(reset)'
+	f = fetch --tags --prune
